@@ -1,0 +1,48 @@
+
+.visible-box {
+    background-color: #28a745;
+}
+
+.hidden-box {
+    background-color: #dc3545;
+    /* Element is invisible but still takes up physical space */
+    visibility: hidden;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+.custom-link:visited {
+    color: #6f42c1;
+}
+
+/* Mouse over link */
+.custom-link:hover {
+    color: #d63384;
+    text-decoration: underline;
+}
+
+/* Selected/Clicked link */
+.custom-link:active {
+    color: #fd7e14;
+    background-color: #fff3cd;
+}
+
+/* iv. Element Visibility */
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
