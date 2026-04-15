@@ -1,0 +1,297 @@
+<! DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Time table</title>
+		<style type = "text/css">
+			body {
+				font-family: sans-serif;
+			}
+			table{
+				border-collapse: collapse;
+				margin: 10px auto;
+			}
+			.flex {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+
+			}
+			.center {
+				text-align: center;
+			}
+			header{
+				text-align: center;
+			}
+			img {
+				height: 100px;
+				max-width: 200px;
+			}
+			table th {
+				width: 1%;
+				padding: 7px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="center">
+			<img src="http://10.24.1.1:8090/images/customizeimages/uploadedwebclientlogo.jpg" alt="logo">
+			<div>
+				<p>JSS MAHAVIDHYAPEETHA</p>
+				<p>JSS SCIENCE AND TECHNOLOGY</p>
+				<h3>Sri Jayachamarajendra college of Engineering</h3>
+			</div>
+		</header>
+		<main>
+			<section>
+				<div class="center">
+					<h4>Department of CS</h4>
+					<p>Time Table</p>
+				</div>
+				<div class="flex">
+					<p>Semester: 6</p>
+					<p>Section: E</p>
+					<p>Room no: CS101</p>
+				</div> 
+			</section>
+			<section>
+				<table border="2" class="center">
+					<tr>
+						<th>DAY</th>
+						<th>7:30-8:30</th>
+						<th>8:30-9:30</th>
+						<th>9:30-10:30</th>
+						<th>10:30-11:00</th>
+						<th>11:00-11:50</th>
+						<th>11:50-12:40</th>
+						<th>12:40-1:30</th>
+						<th>1:30-2:30</th>
+						<th>2:30-3:30</th>
+						<th>3:30-4:30</th>
+						<th>4:30-5:30</th>
+					</tr>
+					<tr>
+						<td>MON</td>
+						<td></td>
+						<td></td>
+						<td>OE-II</td>
+						<td rowspan="6">Break</td>
+						<td>
+							<p>20CS641</p>
+							<p>20CS642</p>
+							<p>22CS643</p>
+						</td>
+						<td>20HU612</td>
+						<td>20CS610</td>
+						<td rowspan="6">Break</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>TUE</td>
+						<td></td>
+						<td></td>
+						<td>OE-III</td>
+						<td>
+							<p>20CS610</p>
+							<p>[CS002]</p>
+						</td>
+						<td>
+							<p>20CS620</p>
+							<p>[CS002]</p>
+						</td>
+						<td>
+							<p>20HU612</p>
+							<p>[CS002]</p>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>WED</td>
+						<td></td>
+						<td>
+							<p>20CS641</p>
+							<p>20CS642</p>
+							<p>20CS643</p>
+						</td>
+						<td>OE-III</td>
+						<td colspan = "3">
+							<p>20CS630P E2</p>
+							<p>HW lab</p>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>THUS</td>
+						<td colspan="3">
+							<p>20CS67L E2</p>
+							<p>SW lab-1</p>
+							<hr>
+							<p>20CS67L E2</p>
+							<p>SW lab-1</p>
+						</td>
+						<td>
+							<p>20CS610</p>
+							<p>[CS002]</p>
+						</td>
+						<td>
+							<p>20CS610</p>
+							<p>[CS002]</p>
+						</td>
+						<td>
+							<p>20CS610</p>
+							<p>[CS002]</p>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>FRI</td>
+						<td></td>
+						<td>
+							<p>20CS641</p>
+							<p>20CS642</p>
+							<p>20CS643</p>
+						</td>
+						<td>OE-II</td>
+						<td>
+							<p>20CS610</p>
+							<p>[CS002]</p>
+						</td>
+						<td>
+							<p>20CS620</p>
+							<p>[CS002]</p>
+						</td>
+						<td>
+							<p>20HU630</p>
+							<p>[CS002]</p>
+						</td>
+						<td colspan = "2">
+							<p>20CS630P E1</p>
+							<p>HW lab</p>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>SAT</td>
+						<td></td>
+						<td></td>
+						<td>OE-III</td>
+						<td colspan="3" class="lab">
+							<p>20CS67L E1</p>
+							<p>SW lab-1</p>
+							<hr>
+							<p>20CS67L E1</p>
+							<p>SW lab-1</p>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<table border="2"class="center">
+					<thread>
+						<tr>
+							<th>Subject code</th>
+							<th>Subject title</th>
+							<th>credit</th>
+							<th>course instructor</th>
+						</tr>
+					</thread>
+					<tbody>
+						<tr>
+							<td>20CS610</td>
+							<td>Machine learning</td>
+							<td>4</td>
+							<td>Prof SNM</td>
+						</tr>
+						<tr>
+							<td>20CS620</td>
+							<td>WEB tech</td>
+							<td>3</td>
+							<td>Prof VS</td>
+						</tr>
+						<tr>
+							<td>20CS630</td>
+							<td>IoT</td>
+							<td>3</td>
+							<td>Prof SGC</td>
+						</tr>
+						<tr>
+						<td>
+							<p>20CS641</p>
+							<p>20CS642</p>
+							<p>20CS643</p>
+						</td>
+						<td>
+							<p>Cloud</p>
+							<p>Auto Cyber Sec</p>
+							<p>Cyber Sec</p>
+						</td>
+							<td>3</td>
+						<td>
+							<p>Prof MAA</p>
+							<p>Prof HDN</p>
+							<p>Prof SPM/Prof RP</p>
+						</td>
+						</tr>
+						<tr>
+							<td>20CS65x</td>
+							<td>OE-II</td>
+							<td>2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>20CS66x</td>
+							<td>OE-III</td>
+							<td>2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>20CS68L</td>
+							<td>MLlab</td>
+							<td>1.5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>20CS67L</td>
+							<td>WEB Tech lab</td>
+							<td>1.5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>20CS630P</td>
+							<td>IoT Practical</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>20CS69P</td>
+							<td>mini project</td>
+							<td>2</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<footer class="flex center">
+			<div>
+				<h4>Dr Anil Kumar</h4>
+				<h4>HOD, Dept of CSE</h4>
+			</div>
+			<div>
+				<h4>Dr C Nataraju</h4>
+				<h4>Principle, SJCE</h4>
+			</div>
+		</footer>
+	</body>
+</html>
