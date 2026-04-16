@@ -1,0 +1,102 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    background-image: url("https://tinyurl.com/34zubbzt");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.hero {
+	height: 50vh;
+  background-image: url("https://iceteg.jssstuniv.in/pages/images/jssstu.png");
+  background-size: contain;        /* fills screen nicely */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #2d5a8a;
+    color: #fff;
+    text-align: center; 
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #ff5722;
+}
+
+main {
+    padding: 20px;
+    text-align: center; 
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    color:#2d5a8a;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d5a8a;
+}
+
+footer {
+    background-color: #2d5a8a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%
+}
+
+
+#links {
+    display: flex;
+    justify-content: space-around; 
+}
+
+#links div {
+    flex: 1; 
+    margin: 0 10px; 
+    text-align: center; 
+}
+
+#navlinks {
+	display:flex;
+	justify-content:space-evenly
+}
