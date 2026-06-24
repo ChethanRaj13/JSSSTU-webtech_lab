@@ -7,7 +7,7 @@
             <h1>Prime Number Checker</h1><br><br>
             <form method="post">
                 Enter a number:
-                <input type="text" id="num"><br><br>
+                <input type="text" name = "num"><br><br>
                 <input type="submit" value="check">
             </form>
             <?php
@@ -18,7 +18,7 @@
                     }
                     else{
                         $flag = 1;
-                        for($i = 2;$i < $n/2;$i){
+                        for($i = 2;$i <= $n/2; $i++){
                             if($n % $i == 0){
                                 $flag = 0;
                                 break;
@@ -28,7 +28,7 @@
                             echo "The given number is not Prime number";
                         }
                         else{
-                            echo "The Given number is a Prime number"
+                            echo "The Given number is a Prime number";
                         }
                     }
                 }
