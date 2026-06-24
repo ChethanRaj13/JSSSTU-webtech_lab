@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>detail form</title>
+    <script>
+      function printdetail(){
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var mobile = document.getElementById("phno").value;
+          var color = document.getElementById("color").value;
+          var gender = "";
+
+          if(document.getElementById("male").checked)
+              gender = "male";
+          else if(document.getElementById("Female").checked)
+              gender = "Female";
+
+          if (name=="" || email=="" || mobile=="" || color==""){
+              alert("please fill all the fields");
+              return;
+          }
+
+          var data =  "Name:"+ name + "\nEmail:" + email + "\nMobile:" + mobile + "\ngender: "+ gender + "\nfav color:"+ color
+
+          document.getElementById("output").value = data;
+
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h2>student detail:</h2>
+      Name:
+      <input type="text" id="name" /><br /><br />
+      Email:
+      <input type="email" id="email" /><br /><br />
+      Phone number:
+      <input type="text" id="phno" /><br /><br />
+      Gender:
+      <input type="radio" name="gender" id="male" />Male
+      <input type="radio" name="gender" id="female" />Female <br /><br />
+      Fav Color:
+      <input type="text" id="color" />
+
+      <input type="button" value="Submit" onclick="printdetail()" />
+      <br /><br />
+
+      <textarea id="output" rows="8" cols="40"></textarea>
+    </center>
+  </body>
+</html>
