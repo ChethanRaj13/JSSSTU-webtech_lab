@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>calculator</title>
+    <script>
+        function calculate(op){
+            var a = parseFloat(document.getElementById("n1").value);
+            var b = parseFloat(document.getElementById("n2").value);
+            var result;
+            if(op=='+')
+                result = a+b;
+            else if (op=="-")
+                result = a-b;
+            else if (op == "*")
+                result = a*b;
+            else if (op == '/')
+                result = a / b;
+
+            document.getElementById("res").value = result;
+        }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1>calculator</h1>
+      number 1:
+      <input type="text" id="n1" />
+      <br />
+      <br>
+      number 2:
+      <input type="text" id="n2" />
+      <br><br>
+      <input type="button" value="+" onclick="calculate('+')">
+      <input type="button" value="-" onclick="calculate('-')">
+      <input type="button" value="*" onclick="calculate('*')">
+      <input type="button" value="/" onclick="calculate('/')">
+      <br><br>
+      result:
+      <input type="text" id="res">
+    </center>
+  </body>
+</html>
