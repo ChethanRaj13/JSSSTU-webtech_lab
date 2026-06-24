@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Form validation</title>
+    <style>
+      form {
+        border: 2px solid black;
+        width: 25%;
+        padding: 10px;
+      }
+    </style>
+    <script>
+      function validate() {
+        var uid = document.getElementById("uid").value;
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var pwd = document.getElementById("pwd").value;
+
+        if (uid.length < 5 || uid.length > 12) {
+          alert("the uid must be between 5 and 12 long");
+          return false;
+        }
+        var namePattern = /^[A-Za-z ]+$/;
+        if (!namePattern.test(name) || name.length < 15) {
+          alert("the name length is not 15 and it is out of character");
+          return false;
+        }
+        var pwdPattern = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*!]).{8,}$/;
+        if (!pwdPattern.test(pwd)) {
+          alert("password is wrong");
+          return false;
+        }
+        var emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (!emailPattern.test(email)) {
+          alert("email is not proper");
+          return false;
+        }
+
+        alert("Registration Successful!");
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1>Student detail form</h1>
+      <br /><br />
+      <form onsubmit="return validate();">
+        User ID:
+        <input type="text" id="uid" /><br /><br />
+        Name:
+        <input type="text" id="name" /><br /><br />
+        Password:
+        <input type="password" id="pwd" /><br /><br />
+        Email:
+        <input type="email" id="email" /><br /><br />
+        <input type="submit" value="Register" />
+      </form>
+    </center>
+  </body>
+</html>
